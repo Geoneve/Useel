@@ -19,4 +19,23 @@ Here is a template to copy and paste onto your html document:
 </html>
 ```
 
+## Credits
+These are the contributors for the funding & contribution for the framework [Useel](https://useel.dev/contributors):
+
+#### Contributors
+1. DashStudios
+2. TokeShireStudios
+3. Pearl1737
+
+#### Useel Developers
+1. GeoneveStudios (**Leader Developer**)
+2. DashStudios
+3. LuvidKoders
+4. dvictor91
+5. jamesDuce1
+6. frankhamiltionJr
+7. JaneDIfk24
+8. jacknorman183
+9. ImportOnion9135
+
 ###### 2022 GeoneveStudios® All Rights Reserved
