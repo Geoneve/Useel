@@ -1,5 +1,5 @@
 /*!
- * Useel v1.13.11 (https://useel.dev/)
+ * Useel v1.21.57 (https://useel.dev/)
  * Copyright 2012-2022 GeoneveStudios® All Rights Reserved
  * Copyright 2020-2022 The Useel Squad™ All Rights Reserved 
  * Licensed under MIT (https://useel.dev/license) 
@@ -331,6 +331,14 @@ body {
 	margin-right: var(--useel-px-15);
 }
 
+.use-i {
+	margin-right: 20px;
+}
+
+.use-j {
+	margin-right: 25px;
+}
+
 .use-d {
 	margin-left: var(--useel-px-5);
 }
@@ -341,6 +349,14 @@ body {
 
 .use-f {
 	margin-left: var(--useel-px-15);
+}
+
+.use-g {
+	margin-left: var(--useel-px-20);
+}
+
+.use-h {
+	margin-left: 25px;
 }
 
 // Fluid Container
@@ -357,13 +373,22 @@ button {
 	display: $useel-inline-block;
 	font-family: var(--useel-sans);
 	cursor: pointer;
+	font-size: 1rem;
+  padding: .375rem .75rem;
+  transition: .15s ease;
 }
 
 .use-btn {
 	background: transparent;
 	border: 1px solid var(--useel-light);
-	border-radius: 5px;
 	cursor: pointer;
+	border-radius: .25rem;
+  line-height: 1.5;
+  vertical-align: middle;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 .use-btn:focus {
@@ -723,19 +748,25 @@ button {
 
 // Forms
 .use-form-control {
-	color: var(--useel-dark);
-	padding: 11.5px;
-	width: 60%;
-	outline: var(--useel-none);
-	border: 1px solid #ebebeb;
-	font-size: var(--useel-px-20);
-	border-radius: 5px;
-	transition: 0.2s ease;
-	box-sizing: var(--useel-border-box);
+	display: inline;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--useel-dark);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  transition: .15s ease;
+	outline: none;
 }
 
 .use-form-control:focus {
-	border-color: #97ceeb;
+	border-color: #86b7fe;
 	box-shadow: 0 0 0 .3rem lighten(#5bc0de, 27.51);
 }
 
@@ -767,7 +798,7 @@ button {
 .use-card {
 	background: var(--useel-white);
 	color: var(--useel-dark);
-	border: 1px solid #ebebeb;
+	border: 1px solid #ced4da;
 	margin: 15px;
 	padding: 10px;
 	border-radius: 5px;
@@ -780,11 +811,13 @@ button {
 	}
 }
 
+// Card Lists
 .use-card-list {
 	margin: 0;
 	min-width: 100px;
 	max-width: 50%;
 	border-radius: 0;
+	transition: 0.15s;
 }
 
 .use-card-top {
@@ -794,7 +827,7 @@ button {
 }
 
 .use-card-middle {
-	border: 1px solid #ebebeb;
+	display: block;
 }
 
 .use-card-bottom {
@@ -1290,11 +1323,11 @@ a.use-link:active {
 
 // Spinners
 .use-spinner {
-	border: 4px solid #f3f3f3;
+	border: 4px solid #fefefe;
 	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	animation: useel-spin 1.469s ease-in-out infinite;
+	width: 80px;
+	height: 80px;
+	animation: useel-spin 1.322s ease-in-out infinite;
 }
 
 .use-spinner-auto {
@@ -1363,5 +1396,43 @@ a.use-link:active {
 	.use-progress-bar {
 		height: 18px;
 		border-radius: 3px;
+	}
+}
+
+// Computer Code & Grid Design: Pre, Code, Footers
+.use-code-snippet {
+	background: #eeeeee;
+	padding: $useel-px-5;
+	margin: $useel-px-10;
+	color: $useel-red;
+	word-wrap: all;
+	
+	// Pre Color Classes
+	* {
+		color: $useel-dark;
+	}
+	
+	[is-doctype] {
+		color: $useel-gray;
+	}
+	
+	[is-tag] {
+		color: $useel-blue;
+	}
+	
+	[is-arrow] {
+		color: $useel-dark;
+	}
+	
+	[is-attribute] {
+		color: $useel-orange;
+	}
+	
+	[is-text] {
+		color: $useel-yellow;
+	}
+	
+	span {
+		color: $useel-dark;
 	}
 }
